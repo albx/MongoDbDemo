@@ -4,6 +4,7 @@ test di utilizzo mongodb con .NET.
 MongoDB viene installato come Windows Service su una macchina virtuale Windows Server 2012 R2 gestita tramite Vagrant.
 ## Prerequisiti
 - **Vagrant**: https://www.vagrantup.com/downloads.html
+- **Virtualbox**: https://www.virtualbox.org/wiki/Downloads
 - **.NET Framework 4.6.1**
 
 ## Installazione
