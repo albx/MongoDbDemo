@@ -24,8 +24,10 @@ storage:
    dbPath: C:\MongoDB\data\db
    journal:
       enabled: true
+   mmapv1:
+      smallFiles: true
 net:
-   bindIp: 0.0.0.0
+   bindIp: 127.0.0.1
    port: 27017
 "@
 
@@ -44,5 +46,7 @@ Remove-Item $unzippedFolderContent -recurse -force
 Remove-Item $zipFile -recurse -force
 
 & $mongoDBPath\bin\mongod.exe --config $mongoDbConfigPath --install
+
+& netsh advfirewall firewall add rule name="MongoDbPort" dir=in protocol=tcp localport=27017 action=allow profile=any
 
 & net start MongoDB
