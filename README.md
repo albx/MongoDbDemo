@@ -13,3 +13,6 @@ Aprire terminale nella cartella vagrant che si trova sotto la root del progetto 
 vagrant up
 ```
 questo installa la macchina virtuale e lancia lo script powershell per l'installazione di mongodb
+
+## Fonti
+Lo script powershell per l'installazione di mongodb è stato preso da: https://gist.github.com/serdarb/5102848
