@@ -27,7 +27,7 @@ storage:
    mmapv1:
       smallFiles: true
 net:
-   bindIp: 127.0.0.1
+   bindIp: 0.0.0.0
    port: 27017
 "@
 
